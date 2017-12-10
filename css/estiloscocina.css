@@ -1,0 +1,258 @@
+
+      body {
+            font-family: Indie Flower;
+            background-color: #02010a;
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 0;
+        }
+          /* Tipografias */
+          @font-face {
+            font-family: 'bj';
+          }
+            .banner {
+                width: 90%;
+                height: 80px;
+                background-color: #5b7989;
+                border-radius: 10px 10px 0 0;
+                margin: auto;
+                padding-top: 0px;
+            }
+            .banner a {
+                font-family: 'bj', Sans-Serif;
+            }   /* Fin Tipografias */
+            /* Propiedades de la Imagen del Banner */
+             #img_banner {
+                width: 40%;
+                height: 70px;
+                background-color: #5b7989;
+                border-radius: 5px;
+                margin-left: 0.5%;
+                margin-top: 5px;
+                float: left;
+             }
+            /* Menu Horizontal */
+            .banner li {
+                padding: 8px;
+                /*Para dar espacios*/
+                display: inline;
+                margin-left: 30px;
+            }
+            .banner a {
+                text-decoration: none;
+                /*para quitar subrayado*/
+                color: #fff;
+                font-size: 1.2em;
+                text-shadow: 1px 2px #02010a;
+                /*Sombra del Menú*/
+                #02010a*//*Cursiva*/
+                font-family: 'Indie Flower', cursive;
+            }
+            a:visited,a:link {
+          		 text-decoration: underline;
+          	  }
+            .banner ul {
+              font-family: Arial; /**NO APLICA*/
+        			font-size: 15px;
+        			float: right;
+        			color: #fff;
+        			line-height: 4;
+        			margin-right:10px;
+            } /* Fin - Menu  */
+             /* Banner  */
+            .navegacion{
+            	width: auto;
+            	height: 100%;
+            }
+           /* Para cambiar el tamaño de Pantalla*/
+              .contenido {
+                  margin: auto;
+                  width: 90%;
+                  height: 100%;
+              }
+              .contenido div {
+                  box-sizing: border-box;
+                  min-width: 150px;
+                  margin-top: -22px; /* 01-12-17 PARA QUE SE AJUSTE EL EL DIV CON EL BANNER*/
+                  padding: 20px;
+              }
+              /* Color de Fondo de para las
+            	cajas de las imagenes*/
+              #c1, #c2, #c3, #c4, #c5, #c6 {
+                  color: white;
+                  background-color: #d5c75f;
+              }
+              #c1, #c2, #c3, #c4, #c5, #c6 {
+                  width: 100%;
+              }
+              /* Tamaño de las Imagenes */
+              #img_1, #img_2, #img_3, #img_4, #img_5, #img_6 {
+                  width: 100%;
+                  border-radius: 2px;
+              }
+                /* Crea el estilo para los efectos de
+              	las  imagenes*/
+              #img_1 {
+                  filter: blur(6px);
+              }
+              #img_2, #img_4, #img_6 {
+                  -webkit-filter: grayscale(100%);
+                  filter: grayscale(90%);
+              }
+              #img_3 {
+                  -webkit-filter: sepia(100%);
+              }
+              /*** MEDIA QUERIES ***/
+              /*Crea el estilo para Moviles juntando
+              las cajas c1 hasta c6 ocupando 100%.*/
+                  @media (min-width: 320px) {
+                      #c1, #c2, #c3, #c4, #c5, #c6 {
+                          width: 100%;
+                          background-color: #d5c75f;
+                      }
+                      /* Crea el estilo para el footter*/
+                      #c1f, #c2f, #c3f, #c4f {
+                          width: 25%;
+                          margin-left: 5%;
+                      }
+                      /* Propiedads del Menu Horizontal*/
+                      .banner li {
+                          padding: 8px;
+                          /*Para dar espacios*/
+                          display: inline;
+                          margin-left: 30px;
+                      }
+                  }
+                  @media screen and (min-width: 600px)
+                  {
+                      #c1, #c2, #c3, #c4, #c5, #c6 {
+                        width: 50%;
+                      }
+                      /* Tamaño de las cajas del Footer */
+                      #c1f, #c2f, #c3f, #c4f {
+                        width: 25%;
+                        margin-left: 5%;
+                      }
+                  }
+                    /*Crea el estilo para desktop colocando
+                    a1 al 25% footer y, c1...c6 al resto a 33 para las c1...c6%*/
+                    @media screen and (min-width: 800px) {
+                        #c1f, #c2f, #c3f, #c4f {
+                            width: 25%;
+                            margin-left: 5%;
+                        }
+                        .banner {
+                            width: 90%;
+                            background-color: #5b7989;
+                        }
+                        #c1, #c2, #c3, #c4, #c5, #c6 {
+                            width: 33.33%;
+                        }
+                        /* Para cambiar el tamaño de Pantalla*/
+                        .contenido {
+                            width: 90%;
+                            margin-left: auto;
+                            margin-right: auto;
+                            padding: 0px;
+                        }
+                    } /*Fin Querie */
+                    /* Distribución de Pantalla*/
+                    .contenido {
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-flex-flow: row wrap;
+                        flex-flow: row wrap;
+                    }
+                    /* Distribución de las Columnas del Footer*/
+                    #c1f, #c2f, #c3f, #c4f {
+                        width: 200px;
+                        margin-left: 5%;
+                    }
+                    /*  Propiedades de los iconos del Footer*/
+                    #img_face, #img_twi, #img_twitter {
+                        width: 20px;
+                        padding: 2px;
+                        margin-left: -80px;
+                    }
+                footer {
+                    clear: both;
+                    bottom: 0;
+                    color: black;
+                    display: flex;
+                    flex-direction: row;
+                    width: 90%;
+                    height: 180px;
+                    margin: auto;
+                    border-radius: 0 0 10px 10px;
+                    background-color: #C6d5c5;
+                    font-family: 'bj', Sans-Serif;
+                }
+                /* Media Query para vistas de teléfonos haste esta vista*/
+          @media screen and (max-width: 900px)  {
+                    #c1f, #c2f, #c3f, #c4f {
+                        width: 40%;
+                        margin:auto;
+                    }
+                    /*** Posicionamiento del Banner ***/
+                    #img_banner {
+                        width: 100%;
+                        margin-left: 0;
+                    }
+                    .banner {
+                        width: 90%;
+                        height: auto;
+                    }
+                    .banner ul {
+                        float: none;
+                        width: 100%;
+                        padding: 0;
+                        text-align: center;
+                        margin: 10PX;
+                    }/** Posicionamiento del Banner **/
+                    .img_banner {
+                        width: 100%;
+                    }
+                    .navegacion {
+                        margin: auto;
+                        padding: 7px;
+                    }
+                    .banner a {
+                        font-family: 'bj', Sans-Serif;
+                        font-size: 14px;
+                    }
+                    /* Menu Horizontal */
+              			.banner li {
+              					padding: 6px;
+              					display: inline;
+              					margin-left: 30px;
+              			}
+                    #c1, #c2, #c3, #c4, #c5, #c6 {
+                        width: 50%%;
+                    }
+                    /* Para cambiar el tamaño de Pantalla*/
+                    .contenido {
+                        width: 90%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        padding-top: 0;
+                    }
+                    footer {
+                        min-width: 220px;
+                        clear: both;
+                        bottom: 0;
+                        color: black;
+                        display: flex;
+                        /* Cambiar la direccion de los elementos
+                        para que se pongan uno debajo del otro*/
+                        /*flex-direction: column en el Footer;
+                        pero me parece mejor en 2 columnas*/
+                        width: 90%;
+                        height: auto;
+                        margin: auto;
+                        border-radius: 0 0 10px 10px;
+                        background-color: #C6d5c5;
+                        font-family: 'bj', Sans-Serif;
+                        font-size: 13px;
+                        flex-wrap: wrap;
+                    }
+                }
